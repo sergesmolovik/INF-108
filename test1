@@ -1,0 +1,7 @@
+import math
+cord = input('Enter coordinates in formate of "x,x y,y" :')
+s = cord.split(" ")
+x = s[0].split(",")
+y = s[1].split(",")
+dist = math.hypot(eval(x[0]) - eval(x[1]), eval(y[0]) - eval(y[1]))
+print("Distance is: ", dist)
